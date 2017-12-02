@@ -35,7 +35,7 @@ func getPartOneSum(numbers []int) int {
 func getPartTwoSum(numbers []int) int {
 	sum := 0
 	halfLength := len(numbers) / 2
-	for i := 0; i < len(numbers)/2; i++ {
+	for i := 0; i < halfLength; i++ {
 		if numbers[i] == numbers[i+halfLength] {
 			sum += numbers[i] * 2
 		}
